@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.objekgeometri;
+
+/**
+ *
+ * @author ACER
+ */
+
+public class TestPolymorphism 
+{
+    public static void main(String[] args)
+    {
+        Kotak persegi = new Kotak();
+        persegi.setColor("Blue");
+        ObjekGeometri bentukSem = new ObjekGeometri();
+        bentukSem.setColor("black");
+        
+        displayObject(persegi);
+        displayObject(new Lingkaran());
+        displayObject(bentukSem);
+    }
+    public static void displayObject(ObjekGeometri obj)
+    {
+        System.out.println(obj.getColor());
+    }
+}
