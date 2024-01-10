@@ -8,22 +8,20 @@ package com.mycompany.objekgeometri;
  *
  * @author ACER
  */
+public class Lingkaran extends ObjekGeometri {
+    private double jarijari;
+    private double phi = 3.14;
+    
+    Lingkaran(double jarijari){
+        this.jarijari = jarijari;
+    }
 
-public class TestPolymorphism 
-{
-    public static void main(String[] args)
-    {
-        Kotak persegi = new Kotak();
-        persegi.setColor("Blue");
-        ObjekGeometri bentukSem = new ObjekGeometri();
-        bentukSem.setColor("black");
-        
-        displayObject(persegi);
-        displayObject(new Lingkaran());
-        displayObject(bentukSem);
+    Lingkaran() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    public static void displayObject(ObjekGeometri obj)
-    {
-        System.out.println(obj.getColor());
+    
+    public String getLuas(){
+        return "Luas Lingkaran = "+ phi * jarijari * jarijari;
     }
+       
 }
